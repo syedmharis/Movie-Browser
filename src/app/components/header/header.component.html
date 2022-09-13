@@ -1,0 +1,19 @@
+<div class="alert alert-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="app-clickable" [routerLink]="['/home']">Movie Browser</h3>
+            </div>
+            <div class="col-md-8">
+                <form (submit)="submitHandler($event)">
+                    <input type="search" name="queryTerm" 
+                    autofocus="autofocus"
+                    [(ngModel)]="queryTerm"
+                    placeholder="Search Your Favourite Movies..."
+                    class="form-control">
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
